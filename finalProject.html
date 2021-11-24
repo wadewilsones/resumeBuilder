@@ -1,3 +1,4 @@
+<!--Programmer: Ulada Haranina-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,9 @@
     <meta name= "keyword" content = "Resume, Build, Resume Builder">
     <meta name = "description" content = "Resume Builder tool">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
     <title>Web-115 Final Project</title>
 </head>
 <body>
@@ -17,38 +21,65 @@
     </header>
     <main>
         <form>
-            <fieldset>
-                <legend>Personal Information:</legend>
-                    <label for = "name">Enter your full name:</label>
-                    <input type = "text" name = "name" id = "name" placeholder="John Doe... ">
-                    <label for = "city">Enter your city:</label>
-                    <input type = "text" name = "city" id = "city" placeholder="New York...">
-                    <label for = "state">Enter your state:</label>
-                    <input type = "text" name = "state" id = "state" placeholder="NY...">
-                    <label for = "phone">Enter your phone number:</label>
-                    <input type = "tel" name = "phone" id = "phone" placeholder="(919)123-4567... ">
-                    <label for = "email"><span>*</span>Enter your email:</label>
-                    <input type = "email" name = "email" id = "email" placeholder="johndoe@gmail.com...">
-                    <label for = "site">Enter your website (if any):</label>
-                    <input type = "text" name = "site" id = "site" placeholder="johndoe.com">
-                    <label for = "summary">Enter your website (if any):</label>
+            <div id = "personal">
+                <h2>Personal Information:</h2>
+                <div class = "container-personal">
+                    <div class = "pers">
+                        <div class = "column">
+                            <label for = "name">Enter your full name:</label>
+                            <input type = "text" name = "name" id = "name" placeholder="John Doe... ">
+                        </div>
+                        <div class = "column">
+                            <label for = "city">Enter your city:</label>
+                            <input type = "text" name = "city" id = "city" placeholder="New York...">
+                        </div>
+                        <div class = "column">  
+                            <label for = "state">Enter your state:</label>
+                            <input type = "text" name = "state" id = "state" placeholder="NY...">
+                        </div>
+                    </div>
+
+                    <div class = "contacts">
+                        <div class = "column">
+                            <label for = "phone">Enter your phone number:</label>
+                            <input type = "tel" name = "phone" id = "phone" placeholder="(919)123-4567... ">
+                        </div>
+                        <div class = "column">
+                            <label for = "email"><span>*</span>Enter your email:</label>
+                            <input type = "email" name = "email" id = "email" placeholder="johndoe@gmail.com...">
+                        </div>
+                        <div class = "column">
+                            <label for = "site">Enter your website (if any):</label>
+                            <input type = "text" name = "site" id = "site" placeholder="johndoe.com">
+                        </div>
+                    </div>
+                </div>
+                    <label for = "summary">Type short summary about yourself:</label><br>
                     <textarea name = "summary" id = "summary" ></textarea>
-            </fieldset>
+                </div>
 
-            <fieldset>
-                <legend>Education section:</legend>
-                    <label for = "uni">Enter your educational facility name:</label>
-                    <input type = "text" name = "uni" id = "uni" placeholder="NC State University...">
 
-                    <label for = "degree">Enter your degree:</label>
-                    <input type = "text" name = "degree" id = "degree" placeholder="B.S.in Computer Science...">
 
-                    <label for = "edu-dates">Enter graduation date:</label>
-                    <input type = "date" name = "edu-dates" id = "edu-dates">
-            </fieldset>
+            <div id = "educational">
+                <h2>Education section:</h2>
+                    <div class = "column">
+                        <label for = "uni">Enter your educational facility name:</label>
+                        <input type = "text" name = "uni" id = "uni" placeholder="NC State University...">
+                    </div>
+                    
+                    <div class = "column">
+                        <label for = "degree">Enter your degree:</label>
+                        <input type = "text" name = "degree" id = "degree" placeholder="B.S.in Computer Science...">
+                    </div>
+                    <div class = "column">
+                        <label for = "edu-dates">Enter graduation date:</label>
+                        <input type = "date" name = "edu-dates" id = "edu-dates">
+                    </div>
+  
+            </div>
 
-            <fieldset>
-                <legend>Experience section:</legend>
+            <div id = "experience">
+                <h2>Experience section:</h2>
                     <label for = "position1">Enter your position:</label>
                     <input type = "text" name = "position1" id = "position1" placeholder="Software engineer...">
                     <label for = "company1">Enter the company name:</label>
@@ -75,10 +106,10 @@
                     <input type = "date" name = "start-job-date3" id = "start-job-date3">
                     <label for = "end-job-date3">Enter end date:</label>
                     <input type = "date" name = "end-job-date3" id = "end-job-date3"><br>    
-            </fieldset>
+            </div>
 
-            <fieldset>
-                <legend>Skills section:</legend>
+            <div id = "skills">
+                <h2>Skills section:</h2>
                     <label for = "soft-skills1">Enter your Soft skills:</label>
                     <input type = "text" name = "soft-skills1" id = "soft-skills1" placeholder="Critical Thinking...">
                     <label for = "soft-skills2">Enter your Soft skills:</label>
@@ -92,7 +123,7 @@
                     <input type = "text" name = "hard-skills2" id = "hard-skills2" placeholder="Critical Thinking...">
                     <label for = "hard-skills3">Enter your Soft skills:</label>
                     <input type = "text" name = "hard-skills3" id = "hard-skills3" placeholder="Critical Thinking...">
-            </fieldset>
+                </div>
 
             <input type="submit" id="submit" value ="Build Resume">
         </form>

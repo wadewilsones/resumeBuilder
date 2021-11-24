@@ -1,0 +1,136 @@
+/*Programmer: Ulada Haranina*/
+*{
+    margin: 0%;
+    border:0;
+    padding:0;
+    font-family: Montserrat, Georgia, sans-serif;
+}
+header{
+    background-color:#373737;
+    color:white;
+    text-align: center;
+    padding: 2% 0;
+}
+header h1{
+    font-size: 3em;
+}
+header h4{
+    font-size: 2em;
+}
+header h5{
+    font-size: 1.2em;
+}
+
+h2{
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+main{
+    width:90%;
+    margin: auto;
+}
+
+#personal{
+    background-color: #373737;
+    width: 50%;
+    margin: 2% auto;
+    border-radius: 5px;
+    padding: 4%;
+    color:white;
+}
+#educational{
+    background-color: #373737;
+    width: 50%;
+    margin: 2% auto;
+    border-radius: 5px;
+    padding: 4%;
+    color:white;
+    display: block;
+}
+#personal label{ 
+    line-height: 3;
+}
+
+.container-personal{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.pers{
+    display: block;
+    margin-right: 10%;
+
+}
+
+.column input{
+    display: block;
+    border-radius: 2px;
+    width:300px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 1em;
+
+}
+
+.contacts{
+    display: block;
+ 
+}
+.contacts span {
+    color:red;
+}
+
+
+
+textarea{
+    min-width: 740px;
+    min-height: 80px;
+    border-radius: 2px;
+}
+
+
+
+#educational{
+    background-color: #373737;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding: 2%;
+    color:white;
+}
+
+#educational h2{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1%;
+}
+
+#experience{
+    background-color: #373737;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding: 2%;
+    color:white;
+}
+
+#experience h2{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1%;
+}
+
+#skills{
+    background-color: #373737;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding: 2%;
+    color:white;
+}
+
+
+#skills h2{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1%;
+}
