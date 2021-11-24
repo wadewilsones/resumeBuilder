@@ -2,9 +2,17 @@
 
 
 document.addEventListener("DOMContentLoaded", loadedPage); // with this function, script will start work only after DOM content is loaded.
+
+function loadedPage(){
+
+
+    //Declarate button variable
+    let submitBtn = document.getElementById("submit");
+
+    
   //Personal info variables
   let name = document.getElementById("name");
-  let country = document.getElementById("country");
+  let role = document.getElementById("role");
   let state = document.getElementById("state");
   let city = document.getElementById("city");
   let zip = document.getElementById("zip");
@@ -55,25 +63,18 @@ document.addEventListener("DOMContentLoaded", loadedPage); // with this function
   let hardSkill1 = document.getElementById("hard-skills1");
   let hardSkill2 = document.getElementById("hard-skills2");
   let hardSkill3 = document.getElementById("hard-skills3");
-
-function loadedPage(){
-
-    //Declarate button variable
-    let submitBtn = document.getElementById("submit");
     //add Event Listener for click event
     submitBtn.addEventListener ('click', buildResume);
 
     function buildResume (e){
         e.preventDefault();
 
-      
+        resumePage = ("<html><head><title>Resume</title><body>");
+        resumePage += ("<h1>" + name.value+"<h1><h2>"+role+"</h2>");
 
 
-
-
-
-
-
+        flyWindow = window.open('resume:blank','Resume');
+        flyWindow.document.write(resumePage);
     }
 
 
