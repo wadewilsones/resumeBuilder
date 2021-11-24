@@ -22,7 +22,7 @@ header h5{
 }
 
 h2{
-    text-align: left;
+    text-align: left!important;
     font-weight: 300;
     margin-bottom: 5%;
 }
@@ -36,20 +36,36 @@ main{
     width: 50%;
     margin: 2% auto;
     border-radius: 5px;
-    padding: 4%;
+    padding: 4% 0 4% 6%;
     color:white;
 }
 #educational{
     background-color: #373737;
     width: 50%;
-    margin: 2% auto;
+    margin: 2% auto!important;
     border-radius: 5px;
-    padding: 4%;
+    padding: 4% 0 4% 6%!important;
     color:white;
     display: block;
+
 }
-#personal label{ 
+
+
+label{ 
     line-height: 3;
+}
+
+
+.container-edu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.edu{
+    display: block;
+    margin-right: 10%;
+
 }
 
 .container-personal{
