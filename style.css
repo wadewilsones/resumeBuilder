@@ -1,150 +1,149 @@
 /*Programmer: Ulada Haranina*/
-*{
-    margin: 0%;
-    border:0;
-    padding:0;
-    font-family: Montserrat, Georgia, sans-serif;
-}
-header{
-    background-color:#373737;
-    color:white;
-    text-align: center;
-    padding: 2% 0;
-}
-header h1{
-    font-size: 3em;
-}
-header h4{
-    font-size: 2em;
-}
-header h5{
-    font-size: 1.2em;
+
+* {
+	margin: 0%;
+	border: 0;
+	padding: 0;
+	font-family: Montserrat, Georgia, sans-serif;
 }
 
-h2{
-    text-align: left;
-    font-weight: 300;
-    margin-bottom: 5%;
-}
-main{
-    width:90%;
-    margin: auto;
+header {
+	background-color: #373737;
+	color: white;
+	text-align: center;
+	padding: 2% 0;
 }
 
-.form-holders{
-    background-color: #373737;
-    width: 80%;
-    margin: 2% auto;
-    border-radius: 5px;
-    padding: 4% 0 4% 6%;
-    color:white;
+header h1 {
+	font-size: 3em;
 }
 
-label{ 
-    line-height: 3;
+header h4 {
+	font-size: 2em;
 }
 
-
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+header h5 {
+	font-size: 1.2em;
 }
 
-.wrap{
-    display: block;
-    margin-right: 10%;
-
+h2 {
+	text-align: left;
+	font-weight: 300;
+	margin-bottom: 5%;
 }
 
-.column input{
-    display: block;
-    border-radius: 2px;
-    width:300px;
-    height: 40px;
-    padding-left: 20px;
-    font-size: 1em;
+main {
+	width: 90%;
+	margin: auto;
+}
 
+.form-holders {
+	background-color: #373737;
+	width: 80%;
+	margin: 2% auto;
+	border-radius: 5px;
+	padding: 4% 0 4% 6%;
+	color: white;
+}
+
+label {
+	line-height: 3;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.wrap {
+	display: block;
+	margin-right: 10%;
+}
+
+.column input {
+	display: block;
+	border-radius: 2px;
+	width: 300px;
+	height: 40px;
+	padding-left: 20px;
+	font-size: 1em;
 }
 
 .wrap span {
-    color:red;
+	color: red;
 }
 
-.wrap p{
-    line-height: 2;
-    font-size: 1.1em;
+.wrap p {
+	line-height: 2;
+	font-size: 1.1em;
 }
 
-.wrap button{
-    width: 150px;
-    padding: 5% 0 4%;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight:600;
-    cursor: pointer;
-font-size: 1em;
+.wrap button {
+	width: 150px;
+	padding: 5% 0 4%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 1em;
 }
 
-.wrap button:hover{
-    width: 150px;
-    padding: 5% 0 4%;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight:600;
-    filter: drop-shadow(1px 1px 4px rgb(173, 173, 173));
-
+.wrap button:hover {
+	width: 150px;
+	padding: 5% 0 4%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	filter: drop-shadow(1px 1px 4px rgb(173, 173, 173));
 }
 
-.wrap i{
-    font-size: 1.8em;
-    padding-left: 6%;
-    display: inline;
-    color:#373737;
+.wrap i {
+	font-size: 1.8em;
+	padding-left: 6%;
+	display: inline;
+	color: #373737;
 }
 
-textarea{
-    min-width: 780px;
-    min-height: 80px;
-    border-radius: 2px;
+textarea {
+	min-width: 780px;
+	min-height: 80px;
+	border-radius: 2px;
 }
 
-
-
-#form-holders{
-    background-color: #373737;
-    margin: 2% 0;
-    border-radius: 5px;
-    padding: 2%;
-    color:white;
+#form-holders {
+	background-color: #373737;
+	margin: 2% 0;
+	border-radius: 5px;
+	padding: 2%;
+	color: white;
 }
 
-
-#skills{
-    background-color: #373737;
-    margin: 2% 0;
-    border-radius: 5px;
-    padding: 2%;
-    color:white;
+#skills {
+	background-color: #373737;
+	margin: 2% 0;
+	border-radius: 5px;
+	padding: 2%;
+	color: white;
 }
 
-#submit{
-    width: 190px;
-    height: 80px;
-    border-radius: 5px;
-    display: block;
-    font-weight:600;
-    cursor: pointer;
-    font-size: 1em;
-    color:white;
-    margin: 5% auto;
-    background-color: #373737;
+#submit {
+	width: 190px;
+	height: 80px;
+	border-radius: 5px;
+	display: block;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 1em;
+	color: white;
+	margin: 5% auto;
+	background-color: #373737;
 }
 
-#submit:hover{
-    filter: drop-shadow(1px 1px 3px rgb(70, 70, 70));
+#submit:hover {
+	filter: drop-shadow(1px 1px 3px rgb(70, 70, 70));
 }
