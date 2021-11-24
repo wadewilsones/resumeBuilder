@@ -116,13 +116,19 @@ label {
     padding: 2% 0 2% 2%;
 }
 .experiense{
-    width: 320px;
-    min-height: 10vh;
-    padding: 2% 0 2% 2%;
+    width: 310px;
+    min-height: 5vh;
+    padding: 2% 0 2% 5%;
 
+}
+.referense{
+    width: 310px;
+    min-height: 5vh;
+    padding: 2% 0 2% 5%;
 }
 .column input:focus,
 .experiense:focus,
+.referense:focus,
 #summary:focus{
     outline:none;
     filter: drop-shadow(1px 1px 4px rgb(141, 141, 141));
