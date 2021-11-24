@@ -109,10 +109,24 @@ label {
 	color: #373737;
 }
 
-textarea {
-	min-width: 780px;
+#summary {
+	min-width: 89%;
 	min-height: 80px;
 	border-radius: 2px;
+    padding: 2% 0 2% 2%;
+}
+.experiense{
+    width: 320px;
+    min-height: 10vh;
+    padding: 2% 0 2% 2%;
+
+}
+.column input:focus,
+.experiense:focus,
+#summary:focus{
+    outline:none;
+    filter: drop-shadow(1px 1px 4px rgb(141, 141, 141));
+
 }
 
 #form-holders {
