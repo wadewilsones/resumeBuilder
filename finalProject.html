@@ -8,6 +8,7 @@
     <meta name= "keyword" content = "Resume, Build, Resume Builder">
     <meta name = "description" content = "Resume Builder tool">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
@@ -21,10 +22,10 @@
     </header>
     <main>
         <form>
-            <div id = "personal">
+            <div class = "form-holders">
                 <h2>Personal Information:</h2>
-                <div class = "container-personal">
-                    <div class = "pers">
+                <div class = "container">
+                    <div class = "wrap">
                         <div class = "column">
                             <label for = "name">Enter your full name:</label>
                             <input type = "text" name = "name" id = "name" placeholder="John Doe... ">
@@ -39,7 +40,7 @@
                         </div>
                     </div>
 
-                    <div class = "contacts">
+                    <div class = "wrap">
                         <div class = "column">
                             <label for = "phone">Enter your phone number:</label>
                             <input type = "tel" name = "phone" id = "phone" placeholder="(919)123-4567... ">
@@ -53,6 +54,9 @@
                             <input type = "text" name = "site" id = "site" placeholder="johndoe.com">
                         </div>
                     </div>
+                    <div class = "wrap">
+                        <p>Please note, to create a resume the email field must be filled out!</p>
+                    </div>
                 </div>
                     <label for = "summary">Type short summary about yourself:</label><br>
                     <textarea name = "summary" id = "summary" ></textarea>
@@ -60,10 +64,10 @@
 
 
 
-            <div id = "educational">
+            <div class = "form-holders">
                 <h2>Education section:</h2>
-                <div class = "container-edu">
-                    <div class = "edu">
+                <div class = "container">
+                    <div class = "wrap">
                         <div class = "column">
                             <label for = "uni">Enter your educational facility name:</label>
                             <input type = "text" name = "uni" id = "uni" placeholder="NC State University...">
@@ -78,71 +82,125 @@
                         <input type = "date" name = "edu-dates" id = "edu-dates">
                     </div>
                 </div>    
-                    <div class = "edu">
+                    <div class = "wrap">
                         <div class = "column">
-                            <label for = "uni">Enter your educational facility name:</label>
-                            <input type = "text" name = "uni" id = "uni" placeholder="NC State University...">
+                            <label for = "uni2">Enter your educational facility name:</label>
+                            <input type = "text" name = "uni2" id = "uni2" placeholder="NC State University...">
                         </div>
                     
                         <div class = "column">
-                            <label for = "degree">Enter your degree:</label>
-                            <input type = "text" name = "degree" id = "degree" placeholder="B.S.in Computer Science...">
+                            <label for = "degree2">Enter your degree:</label>
+                            <input type = "text" name = "degree2" id = "degree2" placeholder="B.S.in Computer Science...">
                         </div>
                         <div class = "column">
-                            <label for = "edu-dates">Enter graduation date:</label>
-                            <input type = "date" name = "edu-dates" id = "edu-dates">
+                            <label for = "edu-dates2">Enter graduation date:</label>
+                            <input type = "date" name = "edu-dates2" id = "edu-dates2">
                         </div>
+                    </div>
+                    <div class = "wrap">
+                        <button> Add More<i class="fas fa-plus-circle"></i></button>
                     </div>
             </div>
         </div>    
 
-            <div id = "experience">
+            <div class = "form-holders">
                 <h2>Experience section:</h2>
-                    <label for = "position1">Enter your position:</label>
-                    <input type = "text" name = "position1" id = "position1" placeholder="Software engineer...">
-                    <label for = "company1">Enter the company name:</label>
-                    <input type = "text" name = "company1" id = "company1" placeholder="Amazon...">
-                    <label for = "start-job-date1">Enter start date:</label>
-                    <input type = "date" name = "start-job-date1" id = "start-job-date1">
-                    <label for = "end-job-date1">Enter end date:</label>
-                    <input type = "date" name = "end-job-date1" id = "end-job-date1"><br>
- 
-                    <label for = "position2">Enter your position:</label>
-                    <input type = "text" name = "position" id = "position" placeholder="Software engineer...">
-                    <label for = "company2">Enter the company name:</label>
-                    <input type = "text" name = "company2" id = "company2" placeholder="Amazon...">
-                    <label for = "start-job-date2">Enter start date:</label>
-                    <input type = "date" name = "start-job-date2" id = "start-job-date2">
-                    <label for = "end-job-date2">Enter end date:</label>
-                    <input type = "date" name = "end-job-date2" id = "end-job-date2"><br>
-                    
-                    <label for = "position3">Enter your position:</label>
-                    <input type = "text" name = "position3" id = "position3" placeholder="Software engineer...">
-                    <label for = "company3">Enter the company name:</label>
-                    <input type = "text" name = "company3" id = "company3" placeholder="Amazon...">
-                    <label for = "start-job-date3">Enter start date:</label>
-                    <input type = "date" name = "start-job-date3" id = "start-job-date3">
-                    <label for = "end-job-date3">Enter end date:</label>
-                    <input type = "date" name = "end-job-date3" id = "end-job-date3"><br>    
+                <div class = "container">
+                    <div class = "wrap">
+                        <div class = "column">
+                            <label for = "position1">Enter your position:</label>
+                            <input type = "text" name = "position1" id = "position1" placeholder="Software engineer...">
+                        </div>
+                        <div class = "column">
+                            <label for = "company1">Enter the company name:</label>
+                            <input type = "text" name = "company1" id = "company1" placeholder="Amazon...">
+                        </div>
+                        <div class = "column">
+                            <label for = "start-job-date1">Enter start date:</label>
+                            <input type = "date" name = "start-job-date1" id = "start-job-date1">
+                        </div>
+                        <div class = "column">
+                            <label for = "end-job-date1">Enter end date:</label>
+                            <input type = "date" name = "end-job-date1" id = "end-job-date1"><br>
+                        </div>
+                    </div>
+
+                    <div class = "wrap">    
+                        <div class = "column">
+                            <label for = "position2">Enter your position:</label>
+                            <input type = "text" name = "position" id = "position" placeholder="Software engineer...">
+                        </div>
+                        <div class = "column">
+                            <label for = "company2">Enter the company name:</label>
+                            <input type = "text" name = "company2" id = "company2" placeholder="Google...">
+                        </div>
+                        <div class = "column">
+                            <label for = "start-job-date2">Enter start date:</label>
+                            <input type = "date" name = "start-job-date2" id = "start-job-date2">
+                        </div>
+                        <div class = "column">
+                            <label for = "end-job-date2">Enter end date:</label>
+                            <input type = "date" name = "end-job-date2" id = "end-job-date2"><br>
+                        </div>
+                    </div>
+
+                    <div class = "wrap">
+                    <div class = "column">
+                        <label for = "position3">Enter your position:</label>
+                        <input type = "text" name = "position3" id = "position3" placeholder="Web developer...">
+                    </div>
+                    <div class = "column">
+                        <label for = "company3">Enter the company name:</label>
+                        <input type = "text" name = "company3" id = "company3" placeholder="Walmart...">
+                    </div>
+                    <div class = "column">
+                        <label for = "start-job-date3">Enter start date:</label>
+                        <input type = "date" name = "start-job-date3" id = "start-job-date3">
+                    </div>
+                    <div class = "column">
+                        <label for = "end-job-date3">Enter end date:</label>
+                        <input type = "date" name = "end-job-date3" id = "end-job-date3"><br>    
+                     </div>
+                </div>     
             </div>
+        </div>    
 
-            <div id = "skills">
+            <div class = "form-holders">
                 <h2>Skills section:</h2>
-                    <label for = "soft-skills1">Enter your Soft skills:</label>
-                    <input type = "text" name = "soft-skills1" id = "soft-skills1" placeholder="Critical Thinking...">
-                    <label for = "soft-skills2">Enter your Soft skills:</label>
-                    <input type = "text" name = "soft-skills2" id = "soft-skills2" placeholder="Critical Thinking...">
-                    <label for = "soft-skills3">Enter your Soft skills:</label>
-                    <input type = "text" name = "soft-skills3" id = "soft-skills3" placeholder="Critical Thinking..."><br>
-
-                    <label for = "hard-skills1">Enter your Soft skills:</label>
-                    <input type = "text" name = "hard-skills1" id = "hard-skills1" placeholder="Critical Thinking...">
-                    <label for = "hard-skills2">Enter your Soft skills:</label>
-                    <input type = "text" name = "hard-skills2" id = "hard-skills2" placeholder="Critical Thinking...">
-                    <label for = "hard-skills3">Enter your Soft skills:</label>
-                    <input type = "text" name = "hard-skills3" id = "hard-skills3" placeholder="Critical Thinking...">
+                <div class = "container">
+                        <div class = "wrap">
+                            <div class = "column">        
+                                <label for = "soft-skills1">Enter your Soft skills:</label>
+                                <input type = "text" name = "soft-skills1" id = "soft-skills1" placeholder="Critical Thinking...">
+                            </div>
+                            <div class = "column">
+                                <label for = "soft-skills2">Enter your Soft skills:</label>
+                                <input type = "text" name = "soft-skills2" id = "soft-skills2" placeholder="Critical Thinking...">
+                            </div>
+                            <div class = "column">
+                                <label for = "soft-skills3">Enter your Soft skills:</label>
+                                <input type = "text" name = "soft-skills3" id = "soft-skills3" placeholder="Critical Thinking...">
+                            </div>
+                        </div>    
+                            <div class = "wrap">
+                                <div class = "column">
+                                    <label for = "hard-skills1">Enter your Hard skills:</label>
+                                    <input type = "text" name = "hard-skills1" id = "hard-skills1" placeholder="Critical Thinking...">
+                                </div>
+                                <div class = "column">
+                                    <label for = "hard-skills2">Enter your Hard skills:</label>
+                                    <input type = "text" name = "hard-skills2" id = "hard-skills2" placeholder="Critical Thinking...">
+                                </div>
+                                <div class = "column">
+                                    <label for = "hard-skills3">Enter your Hard skills:</label>
+                                    <input type = "text" name = "hard-skills3" id = "hard-skills3" placeholder="Critical Thinking...">
+                                </div>
+                            </div>
+                            <div class = "wrap">
+                                <button> Add More<i class="fas fa-plus-circle"></i></button>
+                            </div>
                 </div>
-
+            </div>    
             <input type="submit" id="submit" value ="Build Resume">
         </form>
     </main>
