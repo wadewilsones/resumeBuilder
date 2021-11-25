@@ -173,13 +173,9 @@ label {
 /*Generated page*/
 
 .resume-body{
-	width: 60%;
+	width: 900px;
 	margin:5% auto;
 	border: 2px solid green;
-}
-.container-for-sections{
-	border: 2px solid red;
-	display: flex;
 }
 
 /*Name and role part*/
@@ -206,13 +202,52 @@ label {
 	padding: 0 0 2% 4%;
 }
 
+.container-for-sections{
 
-
-
-.clas-header{
-	border: 2px solid red;
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-start;
+	width:90%;
+	margin: 2% auto;
+	
 }
+
+.container-for-sections h3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;	
+}
+
+.personal{
+	width:100%;
+	padding-right: 15%;
+}
+
+.container-for-sections i{
+	color:#373737;
+	font-size:16px;
+	padding-right: 10px;
+}
+
+.summary{
+	font-size:14px;
+	padding-left: 15%;
+	border-left: #373737 2px solid;
+}
+
+.summary p{
+	margin-top: 4%;
+	width:80%;
+	text-align: justify;
+}
+
+
 
 ul{
 	list-style-type: none;
+	font-weight: normal;
+	font-size:14px;
+	line-height: 1.8;
+
 }

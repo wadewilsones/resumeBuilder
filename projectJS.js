@@ -72,8 +72,9 @@ function loadedPage(){
         resumePage = ('<html><head><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">');
         resumePage += ("<title>Resume</title><body><header><h4>Ulada Haranina</h4><h5>WEB-115 Section 0001</h5><h1>Resume</h1></header><main class = 'resume-body'>");
         //Contact section
-        resumePage += ("<section class = 'name-holder'><h2>" + name.value+"</h2><h4>" + role.value + "</h4></section><div class = 'container-for-sections'><section class ='personal'><h3>Contacts<h3><br><ul><li>" + city.value + ", " + state.value +", " + zip.value + "</li><li>" + phone.value + "</li><li>"+email.value+"</li><li>"+linkedin.value+"</li><li>" + website.value +"</li></section>");
-        resumePage += ("<h3>Profile<h3><p>"+ summary.value +"<p></div>");
+        resumePage += ("<section class = 'name-holder'><h2>" + name.value+"</h2><h4>" + role.value + "</h4></section><div class = 'container-for-sections'><section class ='personal'><h3>Contacts<h3><br><ul><li>");
+        resumePage += ('<i class="fas fa-home"></i>' + city.value + ", " + state.value +", " + zip.value + "</li><li>"+'<i class="fas fa-phone"></i>' + phone.value + "</li><li>"+'<i class="far fa-envelope"></i>'+email.value+"</li><li>"+'<i class="fab fa-linkedin"></i>'+linkedin.value+"</li><li>"+'<i class="fas fa-globe"></i>'+ website.value +"</li></section>");
+        resumePage += ("<section class ='summary'><h3>Profile</h3><p>"+ summary.value +"<p></div>");
 
         //Educational section
         resumePage += ("<h3>Education</h3><ul><li>"+ degree1.value +"</li><li>"+ uni1.value +"</li><li>"+ gradDate.value +"</li><li>"+ degree2.value +"</li><li>"+ uni2.value +"</li><li>"+ gradDate2.value +"</li>");
