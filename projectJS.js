@@ -29,7 +29,7 @@ function loadedPage(){
    let gradDate = document.getElementById("edu-dates");
    let uni2 = document.getElementById("uni2");
    let degree2 = document.getElementById("degree2");
-   let gradDat2 = document.getElementById("edu-dates2");
+   let gradDate2 = document.getElementById("edu-dates2");
 
   //Experience info variables
 
@@ -70,10 +70,21 @@ function loadedPage(){
         e.preventDefault();
 
         resumePage = ("<html><head><title>Resume</title><body>");
-        resumePage += ("<h1>" + name.value+"<h1><h2>"+role+"</h2>");
+        //Contact section
+        resumePage += ("<h1>" + name.value+"<h1><h3>" + role.value + "</h3><h2>Contacts<h2><br><ul><li>" + city.value + ", " + state.value +", " + zip.value + "</li><li>" + phone.value + "</li><li>"+email.value+"</li><li>"+linkedin.value+"</li><li>" + website.value +"</li>");
+        resumePage += ("<h2>Profile<h2><p>"+ summary.value +"<p>");
 
+        //Educational section
+        resumePage += ("<h2>Education</h2><ul><li>"+ degree1.value +"</li><li>"+ uni1.value +"</li><li>"+ gradDate.value +"</li><li>"+ degree2.value +"</li><li>"+ uni2.value +"</li><li>"+ gradDate2.value +"</li>");
 
-        flyWindow = window.open('resume:blank','Resume');
+        //Skills section
+        resumePage += ("<h2>Skills</h2><h4>Technical</h4><ul><li>"+ hardSkill1.value +"</li><li>"+ hardSkill2.value.value +"</li><li>"+ hardSkill3.value +"</li></ul><h4>Soft</h4><ul><li>"+ softSkill1.value +"</li><li>"+ softSkill2.value.value +"</li><li>"+ softSkill3.value +"</li>");
+
+        //Experience section
+        resumePage += ("<h2>Experience</h2><h4>"+position1.value+"<h4><ul><li>" + company1.value + " | " + startJobDate1.value + " - "+ endJobDate1.value + "</li></ul><p>"+details1.value+" "+"Reference: "+ reference1.value+"</p>");
+        resumePage += ("<h4>"+position2.value+"<h4><ul><li>" + company2.value + " | " + startJobDate2.value + " - "+ endJobDate2.value + "</li></ul><p>"+details2.value+" "+"Reference: "+ reference2.value+"</p>");
+        resumePage += ("<h4>"+position3.value+"<h4><ul><li>" + company3.value + " | " + startJobDate3.value + " - "+ endJobDate3.value + "</li></ul><p>"+details3.value+" "+"Reference: "+ reference3.value+"</p>");
+        flyWindow = window.open('about:blank','Resume');
         flyWindow.document.write(resumePage);
     }
 
