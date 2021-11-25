@@ -68,22 +68,23 @@ function loadedPage(){
 
     function buildResume (e){
         e.preventDefault();
-
-        resumePage = ("<html><head><title>Resume</title><body>");
+        //add HTML structure and connect it with css files
+        resumePage = ('<html><head><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">');
+        resumePage += ("<title>Resume</title><body><header><h4>Ulada Haranina</h4><h5>WEB-115 Section 0001</h5><h1>Resume</h1></header><main class = 'resume-body'>");
         //Contact section
-        resumePage += ("<h1>" + name.value+"<h1><h3>" + role.value + "</h3><h2>Contacts<h2><br><ul><li>" + city.value + ", " + state.value +", " + zip.value + "</li><li>" + phone.value + "</li><li>"+email.value+"</li><li>"+linkedin.value+"</li><li>" + website.value +"</li>");
-        resumePage += ("<h2>Profile<h2><p>"+ summary.value +"<p>");
+        resumePage += ("<section class = 'name-holder'><h2>" + name.value+"</h2><h4>" + role.value + "</h4></section><div class = 'container-for-sections'><section class ='personal'><h3>Contacts<h3><br><ul><li>" + city.value + ", " + state.value +", " + zip.value + "</li><li>" + phone.value + "</li><li>"+email.value+"</li><li>"+linkedin.value+"</li><li>" + website.value +"</li></section>");
+        resumePage += ("<h3>Profile<h3><p>"+ summary.value +"<p></div>");
 
         //Educational section
-        resumePage += ("<h2>Education</h2><ul><li>"+ degree1.value +"</li><li>"+ uni1.value +"</li><li>"+ gradDate.value +"</li><li>"+ degree2.value +"</li><li>"+ uni2.value +"</li><li>"+ gradDate2.value +"</li>");
+        resumePage += ("<h3>Education</h3><ul><li>"+ degree1.value +"</li><li>"+ uni1.value +"</li><li>"+ gradDate.value +"</li><li>"+ degree2.value +"</li><li>"+ uni2.value +"</li><li>"+ gradDate2.value +"</li>");
 
         //Skills section
-        resumePage += ("<h2>Skills</h2><h4>Technical</h4><ul><li>"+ hardSkill1.value +"</li><li>"+ hardSkill2.value.value +"</li><li>"+ hardSkill3.value +"</li></ul><h4>Soft</h4><ul><li>"+ softSkill1.value +"</li><li>"+ softSkill2.value.value +"</li><li>"+ softSkill3.value +"</li>");
+        resumePage += ("<h3>Skills</h2><h4>Technical</h4><ul><li>"+ hardSkill1.value +"</li><li>"+ hardSkill2.value.value +"</li><li>"+ hardSkill3.value +"</li></ul><h4>Soft</h4><ul><li>"+ softSkill1.value +"</li><li>"+ softSkill2.value.value +"</li><li>"+ softSkill3.value +"</li>");
 
         //Experience section
-        resumePage += ("<h2>Experience</h2><h4>"+position1.value+"<h4><ul><li>" + company1.value + " | " + startJobDate1.value + " - "+ endJobDate1.value + "</li></ul><p>"+details1.value+" "+"Reference: "+ reference1.value+"</p>");
-        resumePage += ("<h4>"+position2.value+"<h4><ul><li>" + company2.value + " | " + startJobDate2.value + " - "+ endJobDate2.value + "</li></ul><p>"+details2.value+" "+"Reference: "+ reference2.value+"</p>");
-        resumePage += ("<h4>"+position3.value+"<h4><ul><li>" + company3.value + " | " + startJobDate3.value + " - "+ endJobDate3.value + "</li></ul><p>"+details3.value+" "+"Reference: "+ reference3.value+"</p>");
+        resumePage += ("<h3>Experience</h3><h4>"+position1.value+"</h4><ul><li>" + company1.value + " | " + startJobDate1.value + " - "+ endJobDate1.value + "</li></ul><p>"+details1.value+" "+"Reference: "+ reference1.value+"</p>");
+        resumePage += ("<h4>"+position2.value+"</h4><ul><li>" + company2.value + " | " + startJobDate2.value + " - "+ endJobDate2.value + "</li></ul><p>"+details2.value+" "+"Reference: "+ reference2.value+"</p>");
+        resumePage += ("<h4>"+position3.value+"</h4><ul><li>" + company3.value + " | " + startJobDate3.value + " - "+ endJobDate3.value + "</li></ul><p>"+details3.value+" "+"Reference: "+ reference3.value+"</p></main></body></html>");
         flyWindow = window.open('about:blank','Resume');
         flyWindow.document.write(resumePage);
     }
@@ -93,3 +94,4 @@ function loadedPage(){
 
 
 }
+

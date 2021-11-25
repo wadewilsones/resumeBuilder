@@ -6,7 +6,9 @@
 	padding: 0;
 	font-family: Montserrat, Georgia, sans-serif;
 }
-
+body{
+	font-family: Montserrat, Georgia, sans-serif;
+}
 header {
 	background-color: #373737;
 	color: white;
@@ -166,4 +168,51 @@ label {
 
 #submit:hover {
 	filter: drop-shadow(1px 1px 3px rgb(70, 70, 70));
+}
+
+/*Generated page*/
+
+.resume-body{
+	width: 60%;
+	margin:5% auto;
+	border: 2px solid green;
+}
+.container-for-sections{
+	border: 2px solid red;
+	display: flex;
+}
+
+/*Name and role part*/
+.name-holder{
+	background-color: #373737;
+	color:white;
+}
+
+.name-holder h2{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	margin:0;
+	padding: 4% 0 0 4%;
+}
+
+.name-holder h4{
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	margin:0;
+	padding: 0 0 2% 4%;
+}
+
+
+
+
+.clas-header{
+	border: 2px solid red;
+}
+
+ul{
+	list-style-type: none;
 }
