@@ -76,7 +76,7 @@ function loadedPage() {
   //Validate all input
   function validateForm() {
 
-    if (name.value == "" || role.value == "" || state.value == "" || zip.value == "" || state.value.length > 2 || city.value == "" || phone.value == "") {
+    if (name.value == "" || role.value == "" || state.value == "" || zip.value == "" || state.value.length == "" || city.value == "" || phone.value == "") {
       alert("Please, fill out the required fields in the contact section!");
     };
     

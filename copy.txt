@@ -1,0 +1,187 @@
+
+@media only screen and (min-width: 900px) and (max-width:1819px){
+
+h2 {
+		text-align: left;
+		font-weight: 300;
+		margin-bottom: 3%;
+		padding: 2% 2% 0;
+}
+main {
+	width: 90%;
+	margin: auto;
+	border: 5px solid blue;
+}
+
+.form-holders {
+	background-color: #373737;
+	width: 100%;
+	margin: 2% 0;
+	border-radius: 5px;
+	padding:2% 0;
+	color: white;
+
+}
+
+label {
+	line-height: 3;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width:100%;
+
+}
+
+.wrap {
+	display: block;
+	margin: 0 auto;
+	padding: 0 2%;
+
+}
+
+.column input {
+	display: block;
+	border-radius: 2px;
+	width: 95%;
+	height: 40px;
+	padding-left: 5%;
+	font-size: 1em;
+	
+}
+
+ span {
+	color: red;
+}
+
+.wrap p {
+	line-height: 2;
+	font-size: 1.1em;
+	padding: 0;
+}
+
+.wrap button {
+	width: 150px;
+	padding: 5% 0 4%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.wrap button:hover {
+	width: 150px;
+	padding: 5% 0 4%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	filter: drop-shadow(1px 1px 4px rgb(173, 173, 173));
+}
+
+.wrap i {
+	font-size: 1.8em;
+	padding-left: 6%;
+	display: inline;
+	color: #373737;
+}
+
+#summary {
+	display: block;
+	margin: auto;
+	width: 93%;
+	height: 80px;
+	border-radius: 2px;
+    padding: 2% 0 2% 2%;
+}
+#summary-label{
+	margin-left: 2%;
+}
+.container-for-edu-and-skills-section{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 87%;
+	margin: auto;
+}
+
+.form-holders-edu-skills{
+	background-color: #373737;
+	width: 90%;
+	margin: 2% auto;
+	border-radius: 5px;
+	padding: 4% 0 4% 6%;
+	color: white;
+}
+
+.form-holders-edu-skills input {
+	max-width: 250px;
+	border: cornflowerblue 2px solid;
+}
+.container-1{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.wrap2 {
+	margin-left: 6%;
+}
+
+.experiense{
+    width: 310px;
+    min-height: 5vh;
+    padding: 2% 0 2% 5%;
+
+}
+.referense{
+    width: 310px;
+    min-height: 5vh;
+    padding: 2% 0 2% 5%;
+}
+.column input:focus,
+.experiense:focus,
+.referense:focus,
+#summary:focus{
+    outline:none;
+    filter: drop-shadow(1px 1px 4px rgb(141, 141, 141));
+
+}
+
+#form-holders {
+	background-color: #373737;
+	margin: 2% 0;
+	border-radius: 5px;
+	padding: 2%;
+	color: white;
+}
+
+#skills {
+	background-color: #373737;
+	margin: 2% 0;
+	border-radius: 5px;
+	padding: 2%;
+	color: white;
+}
+
+#submit {
+	width: 190px;
+	height: 80px;
+	border-radius: 5px;
+	display: block;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 1em;
+	color: white;
+	margin: 5% auto;
+	background-color: #373737;
+}
+
+#submit:hover {
+	filter: drop-shadow(1px 1px 3px rgb(70, 70, 70));
+}
+}
