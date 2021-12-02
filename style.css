@@ -88,10 +88,15 @@ h2 {
 		width: 95%;
 		height: 40px;
 		padding-left: 5%;
-		font-size: 1em;
+		font-size: 0.7em;
 		
 	}
-	
+	.wrap1 label,
+	.wrap2 label{
+		font-size:0.86em;
+		line-height: 2;
+	}
+
 	 span {
 		color: red;
 	}
@@ -148,11 +153,14 @@ h2 {
 		max-width: 1000px;
 
 	}
+
 	.container-for-edu-and-skills-section{
 		display: grid;
 		grid-template-columns: 50% 50%;
-		width: 87%;
+		width: 100%;
+		max-width: 1200px;
 		margin: auto;
+		border: 2px solid red;
 	}
 	
 	.form-holders-edu-skills{
@@ -162,17 +170,21 @@ h2 {
 		border-radius: 5px;
 		padding: 4% 0 4% 6%;
 		color: white;
+		border: 2px solid rgb(217, 255, 0);
 	}
 	
 	.form-holders-edu-skills input {
 		max-width: 250px;
-		border: cornflowerblue 2px solid;
+		width:90%;
+		
 	}
 	.container-1{
-		display: flex;
-		justify-content: flex-start;
+		display:grid;
+		grid-template-columns: 49% 50%;
+		padding-right: 2%;
+
 	}
-	
+
 	.wrap2 {
 		margin-left: 6%;
 	}
