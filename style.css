@@ -172,10 +172,13 @@ label {
 
 /*Generated page*/
 
+
+
 .resume-body{
 	width: 900px;
 	margin:5% auto;
-	border: 2px solid green;
+	border: 2px solid #373737;
+
 }
 
 /*Name and role part*/
@@ -204,24 +207,26 @@ label {
 
 .container-for-sections{
 
-	display: flex;
-	justify-content: space-between;
-	align-items:flex-start;
-	width:90%;
+	display: grid;
+	grid-template-columns: 40% 60%;
 	margin: 2% auto;
-	
+	padding-bottom: 2%;
 }
+
 
 .container-for-sections h3{
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;	
+	font-size: 18px;
+	text-align: left;	
 }
 
-.personal{
-	width:100%;
-	padding-right: 15%;
+.personal,
+.educationAndSkills{
+
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .container-for-sections i{
@@ -230,18 +235,18 @@ label {
 	padding-right: 10px;
 }
 
-.summary{
+.summaryRes{
 	font-size:14px;
-	padding-left: 15%;
+	padding-left: 10%;
 	border-left: #373737 2px solid;
 }
 
-.summary p{
+.summaryRes p{
 	margin-top: 4%;
-	width:80%;
+	width:90%;
 	text-align: justify;
+	padding-bottom: 10%;
 }
-
 
 
 ul{
@@ -249,5 +254,64 @@ ul{
 	font-weight: normal;
 	font-size:14px;
 	line-height: 1.8;
+	padding-right: 10%
+}
+
+
+/*Other sections*/
+
+.educationAndSkills{
+	padding-right: 10%;
+	border-right:  #373737 2px solid;
+}
+
+.educationAndSkills h3{
+	border-top: #373737 2px solid;
+	padding-top: 10%;
+}
+
+
+.educationAndSkills li{
+	font-size: 14px;
+}
+.educationAndSkills h4{
+	font-weight: 800;
+	margin-top:5%;
+	font-size: 16px;
+	color:#373737;
+}
+
+.skills {
+	margin-top: 10%;
+}
+
+.skills li{
+	font-size:16px;
+}
+.experience{
+	padding-left: 10%;
+	padding-right: 15%;
+}
+
+.experience h3 {
+	border-top: #000000 2px solid;
+    padding-right: 25%;
+    padding-top: 10%;
+}
+
+.experience h4{
+	font-weight: 800;
+	margin-top:5%;
+	font-size: 18px;
+	color:#373737;
+}
+
+
+.experience li{
+	font-weight: 800;
+}
+.experience p{
+	text-align: justify;
+	padding: 2% 5% 5% 0;
 
 }
