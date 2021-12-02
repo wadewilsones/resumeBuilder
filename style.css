@@ -117,6 +117,36 @@ label {
 	border-radius: 2px;
     padding: 2% 0 2% 2%;
 }
+
+.container-for-edu-and-skills-section{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 87%;
+	margin: auto;
+}
+
+.form-holders-edu-skills{
+	background-color: #373737;
+	width: 90%;
+	margin: 2% auto;
+	border-radius: 5px;
+	padding: 4% 0 4% 6%;
+	color: white;
+}
+
+.form-holders-edu-skills input {
+	max-width: 250px;
+	border: cornflowerblue 2px solid;
+}
+.container-1{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.wrap2 {
+	margin-left: 6%;
+}
+
 .experiense{
     width: 310px;
     min-height: 5vh;
@@ -169,6 +199,7 @@ label {
 #submit:hover {
 	filter: drop-shadow(1px 1px 3px rgb(70, 70, 70));
 }
+
 
 /*Generated page*/
 

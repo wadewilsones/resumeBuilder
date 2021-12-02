@@ -74,42 +74,80 @@
                <label for = "summary"><span>*</span>Type short summary about yourself:</label><br>
                <textarea name = "summary" id = "summary"></textarea>
             </div>
-            <div class = "form-holders">
-               <h2>Education section:</h2>
-               <div class = "container">
-                  <div class = "wrap">
-                     <div class = "column">
-                        <label for = "uni"><span>*</span>Enter your educational facility name:</label>
-                        <input type = "text" name = "uni" id = "uni" placeholder="NC State University...">
+
+            <div class = "container-for-edu-and-skills-section">
+               <!--Educational section-->
+               <div class = "form-holders-edu-skills">
+                  <h2>Education section:</h2>
+                  <div class = "container-1">
+                     <div class = "wrap1">
+                        <div class = "column">
+                           <label for = "uni"><span>*</span>Enter your educational facility:</label>
+                           <input type = "text" name = "uni" id = "uni" placeholder="NC State University...">
+                        </div>
+                        <div class = "column">
+                           <label for = "degree"><span>*</span>Enter your degree:</label>
+                           <input type = "text" name = "degree" id = "degree" placeholder="B.S.in Computer Science..."/>
+                        </div>
+                        <div class = "column">
+                           <label for = "edu-dates">Enter graduation date:</label>
+                           <input type = "date" name = "edu-dates" id = "edu-dates">
+                        </div>
                      </div>
-                     <div class = "column">
-                        <label for = "degree"><span>*</span>Enter your degree:</label>
-                        <input type = "text" name = "degree" id = "degree" placeholder="B.S.in Computer Science..."/>
-                     </div>
-                     <div class = "column">
-                        <label for = "edu-dates">Enter graduation date:</label>
-                        <input type = "date" name = "edu-dates" id = "edu-dates">
+                     <div class = "wrap2">
+                        <div class = "column">
+                           <label for = "uni2">Enter your educational facility:</label>
+                           <input type = "text" name = "uni2" id = "uni2" placeholder="NC State University...">
+                        </div>
+                        <div class = "column">
+                           <label for = "degree2">Enter your degree:</label>
+                           <input type = "text" name = "degree2" id = "degree2" placeholder="B.S.in Computer Science...">
+                        </div>
+                        <div class = "column">
+                           <label for = "edu-dates2">Enter graduation date:</label>
+                           <input type = "date" name = "edu-dates2" id = "edu-dates2">
+                        </div>
                      </div>
                   </div>
-                  <div class = "wrap">
-                     <div class = "column">
-                        <label for = "uni2">Enter your educational facility name:</label>
-                        <input type = "text" name = "uni2" id = "uni2" placeholder="NC State University...">
+               </div>
+               <!--End of educational section-->
+            <!--Skills section-->
+            <div class = "form-holders-edu-skills">
+               <h2>Skills section:</h2>
+               <div class = "container-1">
+                  <div class = "wrap1">
+                     <div class = "column">        
+                        <label for = "soft-skills1"><span>*</span>Enter your Soft skills:</label>
+                        <input type = "text" name = "soft-skills1" id = "soft-skills1" placeholder="Critical Thinking...">
                      </div>
                      <div class = "column">
-                        <label for = "degree2">Enter your degree:</label>
-                        <input type = "text" name = "degree2" id = "degree2" placeholder="B.S.in Computer Science...">
+                        <label for = "soft-skills2">Enter your Soft skills:</label>
+                        <input type = "text" name = "soft-skills2" id = "soft-skills2" placeholder="Stress management...">
                      </div>
                      <div class = "column">
-                        <label for = "edu-dates2">Enter graduation date:</label>
-                        <input type = "date" name = "edu-dates2" id = "edu-dates2">
+                        <label for = "soft-skills3">Enter your Soft skills:</label>
+                        <input type = "text" name = "soft-skills3" id = "soft-skills3" placeholder="Problem-solving...">
                      </div>
                   </div>
-                  <div class = "wrap">
-                     <button> Add More<i class="fas fa-plus-circle"></i></button>
+                  <div class = "wrap2">
+                     <div class = "column">
+                        <label for = "hard-skills1"><span>*</span>Enter your Hard skills:</label>
+                        <input type = "text" name = "hard-skills1" id = "hard-skills1" placeholder="PHP...">
+                     </div>
+                     <div class = "column">
+                        <label for = "hard-skills2">Enter your Hard skills:</label>
+                        <input type = "text" name = "hard-skills2" id = "hard-skills2" placeholder="Ruby...">
+                     </div>
+                     <div class = "column">
+                        <label for = "hard-skills3">Enter your Hard skills:</label>
+                        <input type = "text" name = "hard-skills3" id = "hard-skills3" placeholder="Golang...">
+                     </div>
                   </div>
                </div>
             </div>
+<!--end of skills section-->
+            </div>   
+
             <div class = "form-holders">
                <h2>Experience section:</h2>
                <div class = "container">
@@ -178,42 +216,6 @@
                      <textarea name = "experiense-3" id = "experiense-3" class = "experiense" ></textarea>
                      <label for = "referense-3">Enter reference (if any):</label><br>
                      <textarea name = "referense-3" id = "referense-3" class = "referense" ></textarea>
-                  </div>
-               </div>
-            </div>
-            <div class = "form-holders">
-               <h2>Skills section:</h2>
-               <div class = "container">
-                  <div class = "wrap">
-                     <div class = "column">        
-                        <label for = "soft-skills1"><span>*</span>Enter your Soft skills:</label>
-                        <input type = "text" name = "soft-skills1" id = "soft-skills1" placeholder="Critical Thinking...">
-                     </div>
-                     <div class = "column">
-                        <label for = "soft-skills2">Enter your Soft skills:</label>
-                        <input type = "text" name = "soft-skills2" id = "soft-skills2" placeholder="Stress management...">
-                     </div>
-                     <div class = "column">
-                        <label for = "soft-skills3">Enter your Soft skills:</label>
-                        <input type = "text" name = "soft-skills3" id = "soft-skills3" placeholder="Problem-solving...">
-                     </div>
-                  </div>
-                  <div class = "wrap">
-                     <div class = "column">
-                        <label for = "hard-skills1"><span>*</span>Enter your Hard skills:</label>
-                        <input type = "text" name = "hard-skills1" id = "hard-skills1" placeholder="PHP...">
-                     </div>
-                     <div class = "column">
-                        <label for = "hard-skills2">Enter your Hard skills:</label>
-                        <input type = "text" name = "hard-skills2" id = "hard-skills2" placeholder="Ruby...">
-                     </div>
-                     <div class = "column">
-                        <label for = "hard-skills3">Enter your Hard skills:</label>
-                        <input type = "text" name = "hard-skills3" id = "hard-skills3" placeholder="Golang...">
-                     </div>
-                  </div>
-                  <div class = "wrap">
-                     <button> Add More<i class="fas fa-plus-circle"></i></button>
                   </div>
                </div>
             </div>
