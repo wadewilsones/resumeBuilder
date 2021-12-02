@@ -72,7 +72,7 @@ label {
 	font-size: 1em;
 }
 
-.wrap span {
+ span {
 	color: red;
 }
 
@@ -173,9 +173,9 @@ label {
 /*Generated page*/
 
 
-
 .resume-body{
-	width: 900px;
+	max-width: 900px;
+	width: 90%;
 	margin:5% auto;
 	border: 2px solid #373737;
 
@@ -243,9 +243,11 @@ label {
 
 .summaryRes p{
 	margin-top: 4%;
-	width:90%;
+	width:75%;
 	text-align: justify;
+	line-height: 1.8;
 	padding-bottom: 10%;
+
 }
 
 
@@ -312,6 +314,7 @@ ul{
 }
 .experience p{
 	text-align: justify;
-	padding: 2% 5% 5% 0;
+	padding: 2% 0% 2% 0;
+	font-weight: normal;
 
 }
