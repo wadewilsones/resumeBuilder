@@ -49,7 +49,7 @@ h2 {
 
 	}
 	main {
-		width:90%;
+		width:95%;
 		max-width: 550px;
 		margin: 5% auto;
 	
@@ -135,10 +135,10 @@ h2 {
 	
 	#summary {
 		display: block;
-		margin: auto;
+		margin: 0 auto 5%;
 		max-width: 400px;
 		min-width:240px;
-		width: 50%;
+		width: 80%;
 		height: 80px;
 		border-radius: 2px;
 		padding: 2% 0 2% 2%;
@@ -173,17 +173,24 @@ h2 {
 		width:90%;
 		
 	}
-	.container-1{
-		display:grid;
-		grid-template-columns: 49% 50%;
-		padding-right: 2%;
+	.container-1 {
+		display: block;
+		width:90%;
+		max-width: 800px;
+		margin: auto;
 
-	}
-
-	.wrap2 {
-		margin-left: 6%;
 	}
 	
+	.wrap1,
+	.wrap2 {
+		display: block;
+		margin: 0 auto;
+		padding: 0 2%;
+		max-width:300px;
+		width:100%;
+		margin-bottom: 5%;
+	
+	}
 	.experiense{
 		max-width: 310px;
 		width:90%;
